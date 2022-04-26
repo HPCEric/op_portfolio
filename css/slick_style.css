@@ -9,12 +9,13 @@ html,
         }
 
         .slider {
-            width: 50%;
-            margin: 100px auto;
+            width: 80%;
+            margin: auto;
         }
 
         .slick-slide {
             margin: 0px 20px;
+            padding-left: 40px;
         }
 
         .slick-slide img {
@@ -23,7 +24,7 @@ html,
 
         .slick-prev:before,
         .slick-next:before {
-            color: black;
+            color: rgb(0, 0, 0);
         }
 
 
@@ -33,7 +34,7 @@ html,
         }
 
         .slick-active {
-            opacity: .5;
+            opacity: 1;
         }
 
         .slick-current {
@@ -48,7 +49,10 @@ html,
             margin: 5px;
         }
 
-        .slider div {
+        .slider img{
+            width: 100px;
+        }
+        /* .slider div {
             border: 1px solid black;
             text-align: center;
-        }
+        } */

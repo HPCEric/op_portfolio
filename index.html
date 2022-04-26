@@ -21,47 +21,79 @@
     <script src="css/slick/slick.js"></script>
     <!-- side_menu -->
     <link rel="stylesheet" href="css/side_menu.css">
+
+
+    <style>
+        .c_icon {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .c_icon a {
+            color: #FFF;
+            transform: scale(1);
+            transition: .3s;
+        }
+
+        .c_icon a:hover {
+            color: #fff;
+            transform: scale(1.3);
+        }
+    </style>
 </head>
 
 <body>
     <!-- sideMenu -->
-        <div class="ham-btn">
-            <span></span>
-            <span></span>
-        </div>
-        <div class="side-menu-group">
-            <div class="side-menu">
-                <form>
-                    <input type="search" name="" id="" placeholder="type...">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <nav>
-                    <a href="">
-                        <i class="fa fa-solid fa-users"></i>
-                        home
-                    </a>
-                    <a href="">
-                        <i class="fa fa-solid fa-users"></i>
-                        home
-                    </a>
-                    <a href="">
-                        <i class="fa fa-solid fa-users"></i>
-                        home
-                    </a>
-                    <a href="">
-                        <i class="fa fa-solid fa-users"></i>
-                        home
-                    </a>
-                    <a href="">
-                        <i class="fa fa-solid fa-users"></i>
-                        home
-                    </a>
+    <div class="ham-btn">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="side-menu-group">
+        <div class="side-menu">
+            <form>
+                <input type="search" name="" id="" placeholder="type...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="c_icon mb-3">
+                <a href="https://github.com/Saichii" target="_blank">
+                    <i class="fa-3x fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:overy1399@gmail.com" target="_blank">
+                    <i class="fa-3x fa-solid fa-envelope"></i>
+                </a>
 
-                </nav>
             </div>
+
+            <nav>
+
+                <a href="#">
+                    <i class="fa fa-solid fa-house"></i>
+                    HOME
+                </a>
+                <a href="">
+                    <i class="fa fa-solid fa-wrench"></i>
+                    SKILL
+                </a>
+                <a href="">
+                    <i class="fa fa-solid fa-book"></i>
+                    PORTFOLIO
+                </a>
+                <a href="">
+                    <i class="fa fa-solid fa-user-tie"></i>
+                    ABOUT
+                </a>
+                <a href="">
+                    <i class="fa fa-solid fa-right-to-bracket"></i>
+                    LOGIN
+                </a>
+
+            </nav>
         </div>
+    </div>
     <!-- sideMenu end -->
     <div class="container">
         <!-- bs carousel -->

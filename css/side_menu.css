@@ -145,3 +145,20 @@
         .open span:nth-child(2) {
             transform: translateY(-10px) rotate(315deg);
         }
+
+        .s_icon {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .s_icon a {
+            color: #FFF;
+            transform: scale(1);
+            transition: .3s;
+        }
+
+        .s_icon a:hover {
+            color: #fff;
+            transform: scale(1.3);
+        }

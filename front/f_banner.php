@@ -1,0 +1,13 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/id/1000/1920/1080" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/id/1001/1920/1080" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/id/1002/1920/1080" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>

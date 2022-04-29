@@ -1,30 +1,9 @@
-<!-- <h3>新增標題圖片</h3>
-<hr>
-<form action="api/C.php" method="post" enctype="multipart/form-data">
-    <table>
-        <tr>
-            <td>Banner圖片:</td>
-            <td><input type="file" name="img"></td>
-        </tr>
-        <tr>
-            <td>說明文字:</td>
-            <td><input type="text" name="text"></td>
-        </tr>
-    </table>
-</form>
-<div>
-    <input type="submit" value="新增">
-    <input type="reset" value="重置">
-</div> -->
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="m_banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">新增Banner圖片</h5>
+                <h5 class="modal-title" id="exampleModalLabel">新增Banner</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="api/C.php" method="post" enctype="multipart/form-data">
@@ -33,8 +12,7 @@
                         <tr>
                             <td>Banner圖片:</td>
                             <td>
-                                <input type="file" name="img">
-                                
+                                <input type="file" name="img">                            
                             </td>
                         </tr>
                         <tr>

@@ -25,7 +25,6 @@
                 <tbody>
                     <tr>
                         <td>
-                            id:<?= $row['id']; ?>
                             <img src="./img/<?= $row['img']; ?>">
                         </td>
                         <td>

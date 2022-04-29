@@ -19,6 +19,8 @@
     <script src="css/slick/slick.js"></script>
     <!-- side_menu -->
     <link rel="stylesheet" href="css/side_menu.css">
+    <!-- js -->
+    <script src="js/js.js"></script>
 
 </head>
 

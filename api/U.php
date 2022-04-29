@@ -7,6 +7,8 @@ foreach ($_POST['id'] as $key => $id) {
         // post 內有 del 欄位 且del中帶有id
         // del
         $Banner->del($id);
+        // $img=$Banner->find($id);
+        // unlink('../img/'.$img['img']); //刪除資料庫圖檔
     } else {
         //update
         $data = $Banner->find($id);

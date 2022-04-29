@@ -4,7 +4,7 @@
         <tr>
             <td>頁尾版權文字:</td>
             <td>
-                <input type="text" name="text" value="<?=$Footer->find(['id'=>1])['text'];?>">
+                <input type="text" name="text" value="<?= $Footer->find(['id' => 1])['text']; ?>">
             </td>
         </tr>
     </table>

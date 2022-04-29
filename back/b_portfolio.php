@@ -68,6 +68,7 @@
                         <td>
                             <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
                             <input type="button" class="btn btn-success U_por" data-bs-toggle="modal" data-bs-target="#m_U_por" data-id="<?= $row['id']; ?>" value="編輯">
+                            <input type="button" class="btn btn-danger" onclick="del('portfolio','<?= $row['id']; ?>')" value="刪除">
                         </td>
                     </tr>
                 </tbody>

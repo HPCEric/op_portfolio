@@ -18,6 +18,8 @@ include_once "base.php";
     <link rel="stylesheet" href="css/back_side_menu.css">
     <!-- jQ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!-- js -->
+    <script src="js/js.js"></script>
     <style>
 
     </style>

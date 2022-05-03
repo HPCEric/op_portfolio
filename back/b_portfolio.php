@@ -78,7 +78,7 @@
         </table>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m_portfolio">
-            新增banner
+            新增作品
         </button>
         <br>
         <input type="submit" value="確定修改">

@@ -1,1 +1,1 @@
-&copy; Copyright by Saichii 2022
+&copy; <?=$Footer->find(['id'=>1])['text'];?>

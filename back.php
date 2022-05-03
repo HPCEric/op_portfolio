@@ -20,6 +20,8 @@ include_once "base.php";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <!-- js -->
     <script src="js/js.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/home.css">
     <style>
 
     </style>
@@ -28,8 +30,9 @@ include_once "base.php";
 <body>
 
     <h2 class="text-center">後臺管理</h2>
+    <div class="container">
     <?php
-    // include "back/b_sidemenu.php";
+    include "back/b_sidemenu.php";
     ?>
 
     <!-- include backend page-->
@@ -44,7 +47,7 @@ include_once "base.php";
     ?>
     <!-- include backend page end-->
 
-
+    </div>
 
 
     <!-- bs -->

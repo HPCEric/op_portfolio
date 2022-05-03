@@ -21,32 +21,122 @@
     <link rel="stylesheet" href="css/side_menu.css">
     <!-- js -->
     <script src="js/js.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/home.css">
 
+
+    <style>
+        .title {
+            width: 40%;
+        }
+
+        .title h2 {
+            position: relative;
+            color: white;
+            font-size: 185px;
+            line-height: 1;
+            display: inline-block;
+            letter-spacing: 4px;
+        }
+
+        .title h2::after {
+            content: 'My mission is to continue to create promising web design & website.';
+            font-size: 14px;
+            display: inline-block;
+            position: absolute;
+            right: -34px;
+            bottom: 15px;
+            line-height: 2;
+            letter-spacing: 0px;
+            width: 130px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- sideMenu -->
-    <?php
-    include "front/f_sidemenu.php";
-    ?>
-    <!-- sideMenu end -->
+
+
+
+    <!-- header -->
+    <div class="header fixed-top container-fluid">
+        <div class="row p-2">
+            <div class="col">
+                <a href="">
+                    <h3>logo</h3>
+                </a>
+            </div>
+            <div class="col d-flex align-items-center">
+                <div class="item d-flex">
+                    <li>
+                        <a href="">SKILL</a>
+                    </li>
+                    <li>
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="">LOGIN</a>
+                    </li>
+                </div>
+            </div>
+            <div class="col">
+                <!-- sideMenu -->
+                <?php
+                include "front/f_sidemenu.php";
+                ?>
+                <!-- sideMenu end -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- header end -->
+
+    <!-- welcome -->
+    <div class="section text-center mb-5">
+        <div class="welcome">
+            <h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+                <span>M</span><span>Y</span>
+                <span></span><span>P</span><span>A</span><span>G</span><span>E</span><span>!</span>
+            </h1>
+        </div>
+    </div>
+    <!-- welcome -->
 
     <div class="container">
         <!-- bs carousel -->
-        <div class="row-cols-1">
+        <div class="row-cols-1 mb-5">
             <?php
             include "front/f_banner.php";
             ?>
         </div>
         <!-- bs carousel end -->
 
-        <!-- slick -->
-        <div class="row-cols-1">
-            <?php
-            include "front/f_slick.php";
-            ?>
+        <!-- about -->
+        <div class="row d-flex align-items-center">
+            <div class="col-3">
+                <div class="wrap">
+                    <div class="title">
+                        <h2 class="about">
+                            ABO
+                            <br>
+                            UT
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+             123   
+            </div>
+
         </div>
-        <!-- slider end -->
+
+        <!-- about end -->
+
+
 
         <!-- por & ex-->
         <div class="row row-cols-1">
@@ -64,6 +154,28 @@
             </div>
         </div>
         <!-- por & ex end -->
+
+        <!-- skill -->
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-3 col-sm-12">
+                <div class="wrap">
+                    <div class="title">
+                        <h2 class="skill">
+                            SKI
+                            <br>
+                            LL
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <?php
+                include "front/f_slick.php";
+                ?>
+            </div>
+
+        </div>
+        <!-- skill end -->
 
         <!-- footer -->
         <div class="row bg-dark text-light text-center">
@@ -89,8 +201,8 @@
                 dots: true,
                 infinite: false,
                 speed: 300,
-                slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToShow: 4,
+                slidesToScroll: 4,
                 responsive: [{
                         breakpoint: 1024,
                         settings: {

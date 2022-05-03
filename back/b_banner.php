@@ -1,10 +1,10 @@
 <style>
-    img {
+     img {
         max-width: 100px;
     }
 </style>
 
-<div class="container">
+
     <h2 class="title">Banner</h2>
     <form action="api/U.php" method="post" enctype="multipart/form-data">
         <table class="table">
@@ -25,7 +25,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <img src="./img/<?= $row['img']; ?>">
+                            <img src="./img/banner/<?= $row['img']; ?>">
                         </td>
                         <td>
                             <input type="text" name="text[]" value="<?= $row['text']; ?>">
@@ -58,7 +58,6 @@
     include "./modal/m_banner.php";
     include "./modal/m_U_img.php";
     ?>
-</div>
 
 
 <script>

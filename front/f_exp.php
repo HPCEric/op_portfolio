@@ -1,3 +1,9 @@
+<style>
+    p{
+font-size: 24px;
+font-weight: normal;
+    }
+</style>
 <h2>Experience</h2>
 <div class="row row-cols-1">
     <?php
@@ -5,7 +11,7 @@
     foreach ($rows as $row) {
     ?>
         <div class="col">
-            <h4><?= $row['year']; ?></h4>
+            <h2><?= $row['year']; ?></h2>
             <p><?= $row['exp']; ?></p>
         </div>
     <?php

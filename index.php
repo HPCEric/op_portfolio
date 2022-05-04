@@ -26,30 +26,7 @@
 
 
     <style>
-        .title {
-            width: 40%;
-        }
 
-        .title h2 {
-            position: relative;
-            color: white;
-            font-size: 185px;
-            line-height: 1;
-            display: inline-block;
-            letter-spacing: 4px;
-        }
-
-        .title h2::after {
-            content: 'My mission is to continue to create promising web design & website.';
-            font-size: 14px;
-            display: inline-block;
-            position: absolute;
-            right: -34px;
-            bottom: 15px;
-            line-height: 2;
-            letter-spacing: 0px;
-            width: 130px;
-        }
     </style>
 </head>
 
@@ -94,19 +71,18 @@
 
 
     <!-- header end -->
-
-    <!-- welcome -->
-    <div class="section text-center mb-5">
-        <div class="welcome">
-            <h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
-                <span>M</span><span>Y</span>
-                <span></span><span>P</span><span>A</span><span>G</span><span>E</span><span>!</span>
-            </h1>
+    <div class="container-fluid">
+        <!-- welcome -->
+        <div class="section text-center mb-5">
+            <div class="welcome">
+                <h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+                    <span>M</span><span>Y</span>
+                    <span></span><span>P</span><span>A</span><span>G</span><span>E</span><span>!</span>
+                </h1>
+            </div>
         </div>
-    </div>
-    <!-- welcome -->
+        <!-- welcome -->
 
-    <div class="container">
         <!-- bs carousel -->
         <div class="row-cols-1 mb-5">
             <?php
@@ -114,7 +90,9 @@
             ?>
         </div>
         <!-- bs carousel end -->
+    </div>
 
+    <div class="container">
         <!-- about -->
         <div class="row d-flex align-items-center">
             <div class="col-3">
@@ -129,11 +107,11 @@
                 </div>
             </div>
             <div class="col-9">
-             123   
+                123
             </div>
 
         </div>
-
+        <div class="line mb-5"></div>
         <!-- about end -->
 
 
@@ -173,20 +151,20 @@
                 include "front/f_slick.php";
                 ?>
             </div>
-
+            <div class="line mb-5"></div>
         </div>
         <!-- skill end -->
-
-        <!-- footer -->
-        <div class="row bg-dark text-light text-center">
-            <div class="col">
-                <?php
-                include "front/f_footer.php";
-                ?>
-            </div>
-        </div>
-        <!-- footer end-->
     </div>
+
+    <!-- footer -->
+    <div class="container-fluid row bg-dark text-light text-center">
+        <div class="col">
+            <?php
+            include "front/f_footer.php";
+            ?>
+        </div>
+    </div>
+    <!-- footer end-->
 
 
 

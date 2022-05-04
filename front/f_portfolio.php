@@ -30,7 +30,8 @@
                         <h2 class="card-title"><?= $row['name']; ?></h2>
                         <div class="box-txt">
                             <p><?= $row['text']; ?></p>
-                            <a href="" class="btn btn-primary">作品連結</a>
+                            <a href="<?= $row['link']; ?>" class="btn btn-primary">作品連結</a>
+                            <a href="<?= $row['github']; ?>" class="btn btn-info">Github連結</a>
                         </div>
                     </div>
                 </a>

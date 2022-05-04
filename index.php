@@ -47,7 +47,7 @@
         <div class="row p-2">
             <div class="col">
                 <a href="index.php">
-                    <img src="img/logo2.png" style="width:150px">
+                    <img src="icon/LOGO/logo2.png" style="width:150px">
                 </a>
             </div>
             <div class="col d-flex align-items-center">

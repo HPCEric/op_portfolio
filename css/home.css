@@ -220,6 +220,7 @@ h1 span:nth-child(14) {
     top: 0;
     bottom: 0;
     margin: auto;
+    background-color: rgba(244, 213, 140, 0.5);
 }
 
 .slick img {

@@ -3,10 +3,10 @@
         <img src="./icon/html.svg" alt="HTML">
     </li>
     <li>
-        <img src="./icon/css.png" alt="CSS">
+        <img src="./icon/css3.svg" alt="CSS">
     </li>
     <li>
-        <img src="./icon/js.png" alt="JavaScript">
+        <img src="./icon/js.svg" alt="JavaScript">
     </li>
     <li>
         <img src="./icon/php.svg" alt="PHP">
@@ -18,7 +18,7 @@
         <img src="./icon/jquery.svg" alt="jQuery">
     </li>
     <li>
-        <img src="./icon/laravel.png" alt="Laravel">
+        <img src="./icon/laravel.svg" alt="Laravel">
     </li>
     <li>
         <img src="./icon/mysql.svg" alt="MySQL">

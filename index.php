@@ -11,30 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- slick -->
-    <link rel="stylesheet" href="css/slick_style.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/slick/slick.css">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="css/slick/slick.js"></script>
+
     <!-- side_menu -->
     <link rel="stylesheet" href="css/side_menu.css">
     <!-- js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/js.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <script src="js/slick.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/home.css">
 
 
     <style>
-        .about-txt {
-            /* width: 550px; */
-            font-size: 22px;
-            font-weight: 500;
-            /* left: 0;
-            right: 0; */
-            margin: auto;
-            letter-spacing: 4px;
-        }
     </style>
 </head>
 
@@ -47,7 +38,7 @@
                     <img src="icon/LOGO/logo2.png" style="width:150px">
                 </a>
             </div>
-            <div class="col-12 d-none d-md-block">
+            <div class="col-12 d-none d-lg-block">
                 <div class="item d-flex justify-content-center">
                     <li>
                         <a href="">SKILL</a>
@@ -63,7 +54,7 @@
                     </li>
                 </div>
             </div>
-            <div class="col d-md-none">
+            <div class="col d-lg-none">
                 <!-- sideMenu -->
                 <?php
                 include "front/f_sidemenu.php";
@@ -140,7 +131,7 @@
 
         <!-- skill -->
         <div class="row d-flex">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-3 col-sm-12">
                 <div class="skill d-flex justify-content-center">
                     <h2>
                         SKI
@@ -149,7 +140,10 @@
                     </h2>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
+
+            <div class="col-lg-auto"></div>
+
+            <div class="col-lg-8 col-sm-12 slick">
                 <?php
                 include "front/f_slick.php";
                 ?>
@@ -177,41 +171,37 @@
     <!-- bs end-->
     <!-- slick -->
     <script>
-        $(document).on('ready', function() {
-            $('.slider').slick({
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                responsive: [
-                    // {
-                    //     breakpoint: 1200,
-                    //     settings: {
-                    //         slidesToShow: 5,
-                    //         slidesToScroll: 5,
-                    //         infinite: true,
-                    //         dots: true
-                    //     }
-                    // },
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+        $('.slick-group').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [{
+                    breakpoint: 996,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
                     }
-
-                ]
-            });
-        })
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
     </script>
     <!-- slick end-->
     <!-- side_menu -->

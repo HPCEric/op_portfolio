@@ -1,8 +1,8 @@
 <style>
     .card-img-top{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 400px;
+        height: 200px;
+        /* object-fit: cover; */
     }
     .card a {
         text-decoration: none;
@@ -24,14 +24,14 @@
             <div class="card h-100">
                 <a href="" class="card-box">
                     <div class="box-img">
-                        <img src="img/por/<?= $row['img']; ?>" class="card-img-top">
+                        <img src="img/por/<?= $row['img']; ?>" class="card-img-top w-100">
                     </div>
                     <div class="card-body bg-dark">
                         <h2 class="card-title"><?= $row['name']; ?></h2>
                         <div class="box-txt">
                             <p><?= $row['text']; ?></p>
-                            <a href="<?= $row['link']; ?>" class="btn btn-primary">作品連結</a>
-                            <a href="<?= $row['github']; ?>" class="btn btn-info">Github連結</a>
+                            <a href="<?= $row['link']; ?>" class="btn btn-primary" target="_blank">作品連結</a>
+                            <a href="<?= $row['github']; ?>" class="btn btn-info" target="_blank">Github連結</a>
                         </div>
                     </div>
                 </a>

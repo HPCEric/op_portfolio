@@ -26,7 +26,15 @@
 
 
     <style>
-
+        .about-txt {
+            width: 550px;
+            font-size: 22px;
+            font-weight: 500;
+            /* left: 0;
+            right: 0; */
+            margin: auto;
+            letter-spacing: 4px;          
+        }
     </style>
 </head>
 
@@ -38,8 +46,8 @@
     <div class="header fixed-top container-fluid">
         <div class="row p-2">
             <div class="col">
-                <a href="">
-                    <h3>logo</h3>
+                <a href="index.php">
+                    <img src="img/logo2.png" style="width:150px">
                 </a>
             </div>
             <div class="col d-flex align-items-center">
@@ -71,9 +79,9 @@
 
 
     <!-- header end -->
-    <div class="container-fluid">
+    <div class="container-fluid g-0">
         <!-- welcome -->
-        <div class="section text-center mb-5">
+        <div class="section text-center mb-3">
             <div class="welcome">
                 <h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
                     <span>M</span><span>Y</span>
@@ -95,7 +103,7 @@
     <div class="container">
         <!-- about -->
         <div class="row d-flex align-items-center">
-            <div class="col-3">
+            <div class="col-6">
                 <div class="wrap">
                     <div class="title">
                         <h2 class="about">
@@ -106,8 +114,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9">
-                123
+            <div class="about-txt col-6">
+                <div>
+                    "你好!我是侯秉鈞，畢業於東華大學教育行政與管理學系，<br>
+                    日本回台後，期望在職涯選擇上看到不同可能而踏入程式設計領域，
+                    在泰山職訓局，接受920小時php資料庫網頁設計課程訓練，<br>
+                    目前仍持續學習中。"
+                </div>
             </div>
 
         </div>
@@ -157,7 +170,7 @@
     </div>
 
     <!-- footer -->
-    <div class="container-fluid row bg-dark text-light text-center">
+    <div class="container-fluid row bg-dark text-light text-center g-0">
         <div class="col">
             <?php
             include "front/f_footer.php";

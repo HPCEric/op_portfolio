@@ -1,5 +1,9 @@
-
-<div class="slick-group ">
+<style>
+  .slick-group{
+      background-color: rgba(250, 239, 151, 0.3);
+  }  
+</style>
+<div class="slick-group">
     <div class="slider">
         <div>
             <img src="./icon/html.svg" alt="HTML">

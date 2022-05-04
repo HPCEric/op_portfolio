@@ -13,7 +13,7 @@
     }
 
 </style>
-<h2>Portfolio</h2>
+<h2 class="text-center mb-3">PORTFOLIO</h2>
 <div class="row row-cols-1 row-cols-sm-2">
     <!-- card -->
     <?php

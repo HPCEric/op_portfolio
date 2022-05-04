@@ -27,31 +27,28 @@
 
     <style>
         .about-txt {
-            width: 550px;
+            /* width: 550px; */
             font-size: 22px;
             font-weight: 500;
             /* left: 0;
             right: 0; */
             margin: auto;
-            letter-spacing: 4px;          
+            letter-spacing: 4px;
         }
     </style>
 </head>
 
 <body>
-
-
-
     <!-- header -->
-    <div class="header fixed-top container-fluid">
+    <div class="container-fluid header">
         <div class="row p-2">
-            <div class="col">
+            <div class="col-12 text-center">
                 <a href="index.php">
                     <img src="icon/LOGO/logo2.png" style="width:150px">
                 </a>
             </div>
-            <div class="col d-flex align-items-center">
-                <div class="item d-flex">
+            <div class="col-12 d-none d-md-block">
+                <div class="item d-flex justify-content-center">
                     <li>
                         <a href="">SKILL</a>
                     </li>
@@ -66,14 +63,13 @@
                     </li>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-md-none">
                 <!-- sideMenu -->
                 <?php
                 include "front/f_sidemenu.php";
                 ?>
                 <!-- sideMenu end -->
             </div>
-
         </div>
     </div>
 
@@ -92,7 +88,7 @@
         <!-- welcome -->
 
         <!-- bs carousel -->
-        <div class="row-cols-1 mb-5">
+        <div class="row-cols-1">
             <?php
             include "front/f_banner.php";
             ?>
@@ -102,19 +98,17 @@
 
     <div class="container">
         <!-- about -->
-        <div class="row d-flex align-items-center">
-            <div class="col-6">
-                <div class="wrap">
-                    <div class="title">
-                        <h2 class="about">
-                            ABO
-                            <br>
-                            UT
-                        </h2>
-                    </div>
+        <div class="row d-flex">
+            <div class="col-sm-12 col-lg-6 my-2">
+                <div class="about d-flex justify-content-center">
+                    <h2>
+                        ABO
+                        <br>
+                        UT
+                    </h2>
                 </div>
             </div>
-            <div class="about-txt col-6">
+            <div class="about-txt col-sm-12 col-lg-6 mb-5">
                 <div>
                     "你好!我是侯秉鈞，畢業於東華大學教育行政與管理學系，<br>
                     日本回台後，期望在職涯選擇上看到不同可能而踏入程式設計領域，
@@ -122,16 +116,14 @@
                     目前仍持續學習中。"
                 </div>
             </div>
+            <div class="line mb-3"></div>
 
         </div>
-        <div class="line mb-5"></div>
         <!-- about end -->
-
-
 
         <!-- por & ex-->
         <div class="row row-cols-1">
-            <div class="col-lg-7">
+            <div class="col-lg-7 mb-5">
                 <?php
                 include "front/f_portfolio.php";
                 ?>
@@ -147,24 +139,22 @@
         <!-- por & ex end -->
 
         <!-- skill -->
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-3 col-sm-12">
-                <div class="wrap">
-                    <div class="title">
-                        <h2 class="skill">
-                            SKI
-                            <br>
-                            LL
-                        </h2>
-                    </div>
+        <div class="row d-flex">
+            <div class="col-lg-6 col-sm-12">
+                <div class="skill d-flex justify-content-center">
+                    <h2>
+                        SKI
+                        <br>
+                        LL
+                    </h2>
                 </div>
             </div>
-            <div class="col-lg-9 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <?php
                 include "front/f_slick.php";
                 ?>
             </div>
-            <div class="line mb-5"></div>
+            <div class="line mb-3"></div>
         </div>
         <!-- skill end -->
     </div>
@@ -194,20 +184,21 @@
                 speed: 300,
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                responsive: [{
-                        breakpoint: 1024,
+                responsive: [
+                    // {
+                    //     breakpoint: 1200,
+                    //     settings: {
+                    //         slidesToShow: 5,
+                    //         slidesToScroll: 5,
+                    //         infinite: true,
+                    //         dots: true
+                    //     }
+                    // },
+                    {
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
+                            slidesToScroll: 3
                         }
                     },
                     {

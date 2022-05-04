@@ -4,7 +4,7 @@
   }  
 </style>
 <div class="slick-group">
-    <div class="slider">
+    <div class="slider d-flex">
         <div>
             <img src="./icon/html.svg" alt="HTML">
         </div>

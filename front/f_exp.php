@@ -1,10 +1,10 @@
 <style>
-    p{
-font-size: 24px;
-font-weight: normal;
+    p {
+        font-size: 24px;
+        font-weight: normal;
     }
 </style>
-<h2>Experience</h2>
+<h2 class="text-center">EXPERIENCE</h2>
 <div class="row row-cols-1">
     <?php
     $rows = $Exp->all();

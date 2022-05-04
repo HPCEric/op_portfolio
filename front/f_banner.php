@@ -1,8 +1,3 @@
-<style>
-    .active{
-        height: 500px;
-    }
-</style>
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

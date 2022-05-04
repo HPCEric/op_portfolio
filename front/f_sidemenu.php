@@ -2,9 +2,9 @@
     <span></span>
     <span></span>
 </div>
-
 <div class="side-menu-group">
     <div class="side-menu">
+
         <form>
             <input type="search" name="" id="" placeholder="type...">
             <button>

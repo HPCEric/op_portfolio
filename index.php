@@ -41,16 +41,22 @@
             <div class="col-12 d-none d-lg-block">
                 <div class="item d-flex justify-content-center">
                     <li>
-                        <a href="">SKILL</a>
+                        <a href="#">HOME</a>
                     </li>
                     <li>
-                        <a href="">PORTFOLIO</a>
+                        <a href="#ABOUT">ABOUT</a>
                     </li>
                     <li>
-                        <a href="">EXPERIENCE</a>
+                        <a href="#POR">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a href="">LOGIN</a>
+                        <a href="#EXP">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#SKILL">SKILL</a>
+                    </li>
+                    <li>
+                        <a href="back.php">LOGIN</a>
                     </li>
                 </div>
             </div>
@@ -91,7 +97,7 @@
         <!-- about -->
         <div class="row d-flex">
             <div class="col-sm-12 col-lg-6 my-2">
-                <div class="about d-flex justify-content-center">
+                <div class="about d-flex justify-content-center" id="ABOUT">
                     <h2>
                         ABO
                         <br>
@@ -114,14 +120,14 @@
 
         <!-- por & ex-->
         <div class="row row-cols-1">
-            <div class="col-lg-7 mb-5">
+            <div class="col-lg-7 mb-5" id="POR">
                 <?php
                 include "front/f_portfolio.php";
                 ?>
             </div>
 
 
-            <div class="col-lg-5">
+            <div class="col-lg-5" id="EXP">
                 <?php
                 include "front/f_exp.php";
                 ?>
@@ -132,7 +138,7 @@
         <!-- skill -->
         <div class="row d-flex">
             <div class="col-lg-3 col-sm-12">
-                <div class="skill d-flex justify-content-center">
+                <div class="skill d-flex justify-content-center" id="SKILL">
                     <h2>
                         SKI
                         <br>

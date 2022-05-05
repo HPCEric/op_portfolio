@@ -23,23 +23,27 @@
 
         <nav>
 
-            <a href="#">
+            <a href="index.php">
                 <i class="fa fa-solid fa-house"></i>
                 HOME
             </a>
-            <a href="">
-                <i class="fa fa-solid fa-wrench"></i>
-                SKILL
-            </a>
-            <a href="">
-                <i class="fa fa-solid fa-book"></i>
-                PORTFOLIO
-            </a>
-            <a href="">
+            <a href="#ABOUT">
                 <i class="fa fa-solid fa-user-tie"></i>
                 ABOUT
             </a>
-            <a href="">
+            <a href="#POR">
+                <i class="fa fa-solid fa-book"></i>
+                PORTFOLIO
+            </a>
+            <a href="#EXP">
+                <i class="fa fa-solid fa-wrench"></i>
+                EXPERIENCE
+            </a>
+            <a href="#SKILL">
+                <i class="fa fa-solid fa-wrench"></i>
+                SKILL
+            </a>
+            <a href="back.php">
                 <i class="fa fa-solid fa-right-to-bracket"></i>
                 LOGIN
             </a>

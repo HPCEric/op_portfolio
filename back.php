@@ -30,24 +30,29 @@ include_once "base.php";
 <body>
 
     <h2 class="text-center">後臺管理</h2>
-    <div class="container">
-    <?php
-    include "back/b_sidemenu.php";
-    ?>
-
-    <!-- include backend page-->
-    <?php
-    $do = $_GET['do'] ?? "b_banner";
-    $file = "back/" . $do . ".php";
-    if (file_exists($file)) {
-        include $file;
-    } else {
-        include "back/b_banner.php";
-    }
-    ?>
-    <!-- include backend page end-->
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <?php
+                include "back/b_sidemenu.php";
+                ?>
+            </div>
+            <div class="col-10">
+                <!-- include backend page-->
+                <?php
+                $do = $_GET['do'] ?? "b_banner";
+                $file = "back/" . $do . ".php";
+                if (file_exists($file)) {
+                    include $file;
+                } else {
+                    include "back/b_banner.php";
+                }
+                ?>
+                <!-- include backend page end-->
+            </div>
+        </div>
     </div>
+
 
 
     <!-- bs -->
